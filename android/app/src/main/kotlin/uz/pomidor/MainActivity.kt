@@ -1,4 +1,4 @@
-package com.example.flutter_musobaqa
+package uz.pomidor
 
 import io.flutter.embedding.android.FlutterActivity
 
