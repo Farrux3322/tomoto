@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_musobaqa/providers/tab_provider.dart';
+import 'package:flutter_musobaqa/providers/tab_admin_provider.dart';
 import 'package:provider/provider.dart';
 
 
-class TabBox extends StatefulWidget {
-  const TabBox({super.key});
+class TabAdminBox extends StatefulWidget {
+  const TabAdminBox({super.key});
 
   @override
-  State<TabBox> createState() => _TabBoxState();
+  State<TabAdminBox> createState() => _TabAdminBoxState();
 }
 
-class _TabBoxState extends State<TabBox> {
+class _TabAdminBoxState extends State<TabAdminBox> {
 
   @override
   Widget build(BuildContext context) {
-    var provider = Provider.of<TabProvider>(context, listen: true);
+    var provider = Provider.of<TabAdminProvider>(context, listen: true);
     return Scaffold(
       body:provider.widget,
       bottomNavigationBar: BottomNavigationBar(
